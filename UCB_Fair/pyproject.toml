@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "UCB-fair"
+version = "0.1.0"
+description = "UCB algorithm for fair classification"
+authors = [
+    "anonymous",
+]
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+torch = "~1.13.1"
+replicator-gym = {path = "../replicator_gym/", develop = true}
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

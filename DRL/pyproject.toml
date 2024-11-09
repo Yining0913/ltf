@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "DRL"
+version = "0.1.0"
+description = "Deep Reinforcement Learning"
+authors = [
+    "anonyomus",
+]
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+torch = "~1.13.1"
+stable-baselines3 = "1.6.2"
+replicator-gym = {path = "../replicator-gym/", develop = true}
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
